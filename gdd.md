@@ -5,7 +5,7 @@
 
 **Working Title:**  
 
-**Genre:**  
+**Genre:** 2D Roguelite  
 
 **Platform(s):**  
 
@@ -18,7 +18,7 @@
 
 ## 2. Core Loop
 
-*Describe the main repeating cycle of your game (what the player does over and over)*:
+The player spawns into a dungeon where they must eliminate enemies through either melee or projectile combat. After each wave of enemies the player is rewarded with either an upgrade to health or combat ability. New, stronger enemies will appear with each wave. Each player has a starting health bar, each hit from an enemy does varying damage. The player can collect randomly generated items each wave to improve their stats. To advance to the next world the player needs to get a certain amount of score. When the player loses all of their health, they restart the game completely.
 
 ---
 
@@ -26,13 +26,23 @@
 
 **Player Actions (What can the player do?):**
 
+Movement, Combat (Melee, projectile)
+
 **Interactions (How do players interact with the game or characters? Controls setup?):**
+
+Pick up items, attack enemies, progress to the next map
 
 **Rules (What constraints or systems define the gameplay?):**
 
+Health bar, cannot leave the map until enough score is accumulated
+
 **Rewards (How does your game reward the players after completing tasks or in the gameplay? What kind of reward system do you envision?):**
 
+Potions, level up system 
+
 **Feedback (How does your game notifies the player? Audio-visual cues? Progress tracking via HUD? Positive/negative feedback?):**
+
+visual and audio cues, HUD for health bar, inventory, and score
 
 ---
 
@@ -40,7 +50,11 @@
 
 **Premise (What is the story/world about?):**
 
+D&D esque, 
+
 **Main Characters:**
+
+dungeon raider (player), bosses
 
 **Conflict/Goal (What drives the player?):**
 
@@ -50,11 +64,19 @@
 
 **Setting/Theme:**
 
+Dungeon
+
 **Level Structure (linear, open world, hub-based?):**
+
+Linear sequence of progression to new maps
 
 **Tutorial/Onboarding (How will players learn mechanics?):**
 
+Text instructions to explain the simple mechanics
+
 **Progression (How does your game increase in difficulty or complexity?):**
+
+New enemies, higher level enemies, new maps
 
 **Exploration/Challenges/Puzzles (if applicable):**
 
@@ -63,6 +85,8 @@
 ## 6. Visual & Audio Style
 
 **Art Style Reference (pixel art, 3D, realistic, low poly, etc.):**
+
+16x16 2D
 
 **Color Palette:**
 
@@ -74,7 +98,11 @@
 
 **HUD (Heads-Up Display) Elements (health, score, minimap, progress tracking, etc.):**
 
+Health bar, player inventory, score
+
 **Menus (main, pause, inventory, etc.):**
+
+pause menu
 
 **Accessibility Features (if any):**
 
@@ -84,9 +112,15 @@
 
 **Engine:**
 
+Godot
+
 **Programming Language(s):**
 
+GDscript
+
 **Tools for Assets (art, sound, etc.):**
+
+art from https://0x72.itch.io/dungeontileset-ii
 
 **Deployment Platform (PC build, web, mobile, etc.):**
 
@@ -95,3 +129,5 @@
 ## 9. Development Plan 
 
 *Proposed Work Schedule: Describe here what your team will work on each week for the remainder of the term. This should function as a schedule or work plan to be followed and successfully develop your game prototype*:
+
+W3: Begin developing prototypes to better understand godot and explore ideas for our official game.
