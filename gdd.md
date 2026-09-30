@@ -18,7 +18,7 @@
 
 ## 2. Core Loop
 
-The player spawns into a dungeon where they must eliminate enemies through either melee or projectile combat. After each wave of enemies the player is rewarded with either an upgrade to health or combat ability. New, stronger enemies will appear with each wave. Each player has a starting health bar, each hit from an enemy does varying damage. The player can collect randomly generated items each wave to improve their stats. To advance to the next world the player needs to get a certain amount of score. When the player loses all of their health, they restart the game completely.
+The player spawns into a dungeon where they must eliminate enemies through either melee or projectile combat while avoiding traps. The enemy's goal is to eliminate the player. At certain score thresholds the player is rewarded with either an upgrade to health or combat ability. New, stronger enemies will appear with each wave. Each player has a starting health bar, each hit from an enemy does varying damage. The player can collect randomly generated items each wave to improve their stats or restore health. To advance to the next map the player needs to get a certain amount of score. When the player loses all of their health, they restart the game completely. 
 
 ---
 
@@ -30,7 +30,7 @@ Movement, Combat (Melee, projectile)
 
 **Interactions (How do players interact with the game or characters? Controls setup?):**
 
-Pick up items, attack enemies, progress to the next map
+Pick up items (potions for buffs and healing), attack enemies, progress to the next map
 
 **Rules (What constraints or systems define the gameplay?):**
 
@@ -42,7 +42,7 @@ Potions, level up system
 
 **Feedback (How does your game notifies the player? Audio-visual cues? Progress tracking via HUD? Positive/negative feedback?):**
 
-visual and audio cues, HUD for health bar, inventory, and score
+visual and audio cues, HUD for health bar (health bar visually gets smaller), inventory, and score
 
 ---
 
@@ -98,7 +98,7 @@ New enemies, higher level enemies, new maps
 
 **HUD (Heads-Up Display) Elements (health, score, minimap, progress tracking, etc.):**
 
-Health bar, player inventory, score
+Health bar, player inventory, score, current buffs 
 
 **Menus (main, pause, inventory, etc.):**
 
