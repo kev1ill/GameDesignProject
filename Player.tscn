@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://bo8w23rn5aclf"]
+
+[ext_resource type="Texture2D" uid="uid://dgaer2rpuiftq" path="res://frames/knight_f_idle_anim_f0.png" id="1_5ncpa"]
+[ext_resource type="Texture2D" uid="uid://bodu5w2fsqt4" path="res://frames/knight_f_idle_anim_f1.png" id="2_wi0c6"]
+[ext_resource type="Texture2D" uid="uid://0ydeata0hfpr" path="res://frames/knight_f_idle_anim_f2.png" id="3_hp6x6"]
+[ext_resource type="Texture2D" uid="uid://bqmv48nrlf8m5" path="res://frames/knight_f_idle_anim_f3.png" id="4_3tkgg"]
+[ext_resource type="Texture2D" uid="uid://dg2bkiht2n1k2" path="res://frames/knight_f_run_anim_f0.png" id="5_l6ohk"]
+[ext_resource type="Texture2D" uid="uid://plmhc3njfgwl" path="res://frames/knight_f_run_anim_f1.png" id="6_oudfo"]
+[ext_resource type="Texture2D" uid="uid://c2rosmxq5e52e" path="res://frames/knight_f_run_anim_f2.png" id="7_d6rpx"]
+[ext_resource type="Texture2D" uid="uid://163orhjgkmc8" path="res://frames/knight_f_run_anim_f3.png" id="8_r3kul"]
+[ext_resource type="Script" uid="uid://fbwie5iyl5bk" path="res://health.gd" id="9_wi0c6"]
+[ext_resource type="Texture2D" uid="uid://bknvsk2syb5tq" path="res://frames/weapon_regular_sword.png" id="10_hp6x6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ik31s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5ncpa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wi0c6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hp6x6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3tkgg")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_l6ohk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_oudfo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_d6rpx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_r3kul")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ik31s"]
+size = Vector2(10, 2)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ticvn"]
+size = Vector2(6, 13)
+
+[node name="Player" type="CharacterBody2D" unique_id=1753172116]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=956184766]
+sprite_frames = SubResource("SpriteFrames_ik31s")
+animation = &"idle"
+offset = Vector2(0, -14)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=461742841]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_ik31s")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=27245124]
+position_smoothing_enabled = true
+
+[node name="Health" type="Node" parent="." unique_id=753496012]
+script = ExtResource("9_wi0c6")
+
+[node name="SwordPivot" type="Node2D" parent="." unique_id=1550325558]
+position = Vector2(0, -8)
+
+[node name="Sprite2D" type="Sprite2D" parent="SwordPivot" unique_id=302305221]
+texture = ExtResource("10_hp6x6")
+offset = Vector2(0, -8)
+
+[node name="Hitbox" type="Area2D" parent="SwordPivot" unique_id=764536253]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SwordPivot/Hitbox" unique_id=805347151]
+position = Vector2(0, -11.5)
+shape = SubResource("RectangleShape2D_ticvn")
