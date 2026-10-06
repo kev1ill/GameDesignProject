@@ -9,12 +9,12 @@
 
 **Platform(s):**  
 
-**Elevator Pitch (1-2 sentences):** 
+**Elevator Pitch (1-2 sentences):** A desperate Kalamazoo College student descends into the secret underground beneath Hicks Center in search of the legendary K-cash, only to uncover the weirdest, funniest, and most chaotic secrets the campus has been hiding for years. 
 
 **Target Audience:** 
 
 
----
+Kalamazoo College Students
 
 ## 2. Core Loop
 
@@ -50,7 +50,7 @@ visual and audio cues, HUD for health bar (health bar visually gets smaller), in
 
 **Premise (What is the story/world about?):**
 
-D&D esque, 
+A broke Kalamazoo College student ventures into the secret underground beneath Hicks Center to find the legendary K-cash, but the only way to reach it is to defeat the Guardians of Hicks, who protect the hidden treasure with absurd campus lore, strange powers, and a lot of attitude. 
 
 **Main Characters:**
 
@@ -58,7 +58,7 @@ dungeon raider (player), bosses
 
 **Conflict/Goal (What drives the player?):**
 
----
+Get all the legendary k-cash in the Hicks Underworld.
 
 ## 5. Level & World Design
 
@@ -80,7 +80,7 @@ New enemies, higher level enemies, new maps
 
 **Exploration/Challenges/Puzzles (if applicable):**
 
----
+Explore stages, kill evil sprites, gain points, and move onto higher stages
 
 ## 6. Visual & Audio Style
 
@@ -102,7 +102,7 @@ Health bar, player inventory, score, current buffs
 
 **Menus (main, pause, inventory, etc.):**
 
-pause menu
+Inventory, pause menu, settings menu, 
 
 **Accessibility Features (if any):**
 
@@ -124,7 +124,7 @@ art from https://0x72.itch.io/dungeontileset-ii
 
 **Deployment Platform (PC build, web, mobile, etc.):**
 
----
+PC
 
 ## 9. Development Plan 
 
