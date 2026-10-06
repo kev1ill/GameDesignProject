@@ -129,3 +129,7 @@ PC
 *Proposed Work Schedule: Describe here what your team will work on each week for the remainder of the term. This should function as a schedule or work plan to be followed and successfully develop your game prototype*:
 
 W3: Begin developing prototypes to better understand godot and explore ideas for our official game.
+
+W4: Finish the initial GDD, continue looking into implementing game mechanics such as health, combat, items and buffs
+
+W5: Begin collaborating on the official project, begin level design process
