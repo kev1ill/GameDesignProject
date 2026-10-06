@@ -3,16 +3,15 @@
 
 ## 1. Game Concept
 
-**Working Title:**  
+**Working Title:**  The Hick's Underworld
 
-**Genre:** 2D Roguelite  
+**Genre:** 2D Roguelite
 
-**Platform(s):**  
+**Platform(s):**  PC
 
 **Elevator Pitch (1-2 sentences):** A desperate Kalamazoo College student descends into the secret underground beneath Hicks Center in search of the legendary K-cash, only to uncover the weirdest, funniest, and most chaotic secrets the campus has been hiding for years. 
 
 **Target Audience:** 
-
 
 Kalamazoo College Students
 
@@ -20,7 +19,6 @@ Kalamazoo College Students
 
 The player spawns into a dungeon where they must eliminate enemies through either melee or projectile combat while avoiding traps. The enemy's goal is to eliminate the player. At certain score thresholds the player is rewarded with either an upgrade to health or combat ability. New, stronger enemies will appear with each wave. Each player has a starting health bar, each hit from an enemy does varying damage. The player can collect randomly generated items each wave to improve their stats or restore health. To advance to the next map the player needs to get a certain amount of score. When the player loses all of their health, they restart the game completely. 
 
----
 
 ## 3. Game Mechanics
 
@@ -64,7 +62,7 @@ Get all the legendary k-cash in the Hicks Underworld.
 
 **Setting/Theme:**
 
-Dungeon
+Dungeon under Hick's 
 
 **Level Structure (linear, open world, hub-based?):**
 
