@@ -52,7 +52,7 @@ A broke Kalamazoo College student ventures into the secret underground beneath H
 
 **Main Characters:**
 
-dungeon raider (player), bosses
+Dungeon raider (player), The Guardians of Hicks (bosses)
 
 **Conflict/Goal (What drives the player?):**
 
@@ -74,7 +74,7 @@ Text instructions to explain the simple mechanics
 
 **Progression (How does your game increase in difficulty or complexity?):**
 
-New enemies, higher level enemies, new maps
+new enemy types, stronger variants of existing enemies, bigger waves, and new maps with new trap types.
 
 **Exploration/Challenges/Puzzles (if applicable):**
 
@@ -84,7 +84,7 @@ Explore stages, kill evil sprites, gain points, and move onto higher stages
 
 **Art Style Reference (pixel art, 3D, realistic, low poly, etc.):**
 
-16x16 2D
+16x16 pixel art, 2D top-down
 
 **Color Palette:**
 
@@ -107,7 +107,7 @@ Health bar, player inventory, score, current buffs
 Inventory, pause menu, settings menu, 
 
 **Accessibility Features (if any):**
-
+None at this moment 
 ---
 
 ## 8. Technical Requirements
@@ -137,3 +137,11 @@ W3: Begin developing prototypes to better understand godot and explore ideas for
 W4: Finish the initial GDD, continue looking into implementing game mechanics such as health, combat, items and buffs
 
 W5: Begin collaborating on the official project, begin level design process
+
+W6:	Player movement, melee + projectile combat, first enemy type
+
+W7:	Score system, wave spawning, item drops, HUD
+
+W8:	Map 1 complete with tutorial text; exit and progression logic
+
+W9:	Maps 2–3, new enemies and traps, level-up rewards
