@@ -88,7 +88,11 @@ Explore stages, kill evil sprites, gain points, and move onto higher stages
 
 **Color Palette:**
 
+a dark, muted dungeon base (deep blues and grays) with one or two bright accent colors reserved for pickups, K-cash, and danger, so the important things pop.
+
 **Music/Audio Resources (to complement the theme of your game):**
+
+moody, slightly goofy chiptune that contrasts with the comedy.
 
 ---
 
