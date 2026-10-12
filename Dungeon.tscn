@@ -173,7 +173,7 @@ tile_map_data = PackedByteArray("AAD8//3/AAACAAMAAAD9//3/AAACAAMAAAD+//3/AAACAAM
 tile_set = SubResource("TileSet_ticvn")
 
 [node name="Player" parent="." unique_id=1753172116 instance=ExtResource("3_igk3i")]
-position = Vector2(8, 16)
+position = Vector2(8, 13)
 collision_layer = 2
 script = ExtResource("4_i2x58")
 

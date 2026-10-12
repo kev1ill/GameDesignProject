@@ -15,6 +15,7 @@ var invulnerable := false
 var dead := false
 var knockback := Vector2.ZERO
 var hit_this_swing: Array[Node] = []
+var facing: String = "down" #remembers last direction for idle animation
 
 func _ready() -> void:
 	add_to_group("player")
@@ -24,14 +25,23 @@ func _ready() -> void:
 	health.died.connect(_on_died)
 
 func _physics_process(delta: float) -> void:
-	var dir := Input.get_vector("move_left", "move_right", "move_up", "move_down" )
+	var dir := Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	velocity = dir * speed + knockback
 	knockback = knockback.move_toward(Vector2.ZERO, 600.0 * delta)
 	move_and_slide()
 	
-	if dir.x != 0.0:
-		sprite.flip_h = dir.x < 0.0
-	sprite.play("run" if dir != Vector2.ZERO else "idle")	
+	#if |dir| > 0 sprite should not be idle
+	if dir != Vector2.ZERO:
+		if abs(dir.x) > abs(dir.y):
+			facing = "side"
+			sprite.flip_h = dir.x < 0
+		elif dir.y < 0:
+			facing = "up"
+		else:
+			facing = "down"
+		sprite.play("run_" + facing)
+	else:
+		sprite.play("idle_" + facing)
 	
 	if Input.is_action_just_pressed("attack") and can_attack:
 		_attack()
@@ -74,7 +84,7 @@ func take_hit(amount: int, from: Vector2) -> void:
 	
 func _on_died() -> void:
 	dead = true
-	sprite.play("idle")	
+	sprite.play("idle_" + facing)	
 	# "await" pauses this function until the timer finishes, without freezing
 	# the game. Execution resumes here after 1 second.
 	await get_tree().create_timer(1.0).timeout
