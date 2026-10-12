@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cvbqb5he7ao53"]
 
-[ext_resource type="Script" uid="uid://dx72dsvhjovdn" path="res://goblin.gd" id="1_5uyxp"]
+[ext_resource type="Script" uid="uid://dx72dsvhjovdn" path="res://orc.gd" id="1_5uyxp"]
 [ext_resource type="Texture2D" uid="uid://bbld57pgj1e88" path="res://frames/goblin_idle_anim_f0.png" id="2_tuylt"]
 [ext_resource type="Texture2D" uid="uid://cbm6nn8bc51un" path="res://frames/goblin_idle_anim_f1.png" id="3_tmwcl"]
 [ext_resource type="Texture2D" uid="uid://dlsl8tpacklhj" path="res://frames/goblin_idle_anim_f2.png" id="4_t7wri"]
